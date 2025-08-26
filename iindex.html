@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Aayush Gupta</title>
+
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet" />
+
+
+  <link
+    rel="stylesheet"
+    href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+    integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+    crossorigin=""
+  />
+
+  
+  <script
+    defer
+    src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+    integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+    crossorigin=""
+  ></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+
+  <script src="https://cdn.polyfill.io/v3/polyfill.min.js"></script>
+
+  <link rel="stylesheet" href="sstyle.css" />
+  <script defer src="sscript.js"></script>
+
+  <link rel="icon" type="image/png" href="images/logos.png">
+</head>
+<body>
+ 
+  <nav class="navbar">
+    <div class="nav__brand">
+        
+        Aayush Gupta
+    </div>
+    <ul class="nav__links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li>
+        <a href="files/Resume.pdf" target="_blank" class="nav__btn">
+       
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8zm0 2.5L18.5 9H14z"/></svg>
+          Resume
+        </a>
+      </li>
+    </ul>
+  </nav>
+
+
+  <header id="home" class="hero">
+    <h1>Hi, I’m <span class="accent">Aayush</span></h1>
+    <p class="hero__sub">Pre-IB student at Merivale High School who loves coding and robotics.</p>
+
+    <div class="hero__actions">
+      <a class="btn btn--accent" href="#contact">
+    
+        <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20 4H4a2 2 0 0 0-2 2v1l10 6l10-6V6a2 2 0 0 0-2-2Zm0 6.64L12 16L4 10.64V18a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2Z"/></svg>
+        Contact
+      </a>
+      <a class="btn btn--ghost" href="files/Resume.pdf" target="_blank">
+        View Resume
+      </a>
+    </div>
+  </header>
+
+  <section id="about" class="section">
+    <h2 class="section__title">About Me</h2>
+
+    <div class="about__grid">
+   
+      <div class="card about__map">
+        <div class="card__header">
+   
+          <svg width="18" height="18" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7m0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5"/></svg>
+          <span>Ottawa, ON</span>
+        </div>
+        <div id="map" class="map"></div>
+      </div>
+
+      
+      <div class="card about__photo">
+        
+        <div class="photo__wrap">
+ 
+          <img
+            alt="photo"
+            src="images/IMG_6208.jpg" width="640" height="420"><rect width="100%%" height="100%%" fill="%2310213a"/><circle cx="320" cy="170" r="70" fill="%2321335a"/><rect x="190" y="260" width="260" height="90" rx="16" fill="%2321335a"/><text x="50%%" y="50%%" dominant-baseline="middle" text-anchor="middle" fill="%23ffffff" font-family="Poppins" font-size="20">Add Your Photo</text></svg>'
+          />
+        </div>
+      </div>
+
+
+      <div class="card about__hobbies">
+        <div class="card__header">Interests &amp; Hobbies</div>
+        <ul class="list">
+          <li>Basketball</li>
+          <li>Karate</li>
+          <li>Coding</li>
+          <li>Robotics</li>
+        </ul>
+      </div>
+
+
+      <div class="card about__skills">
+        <div class="card__header">Skills</div>
+        <div class="skills__viewport">
+ 
+          <div class="skills__row">
+    
+            <div class="skill"><img alt="Java" src="images/java.png" width="60" height="60"></div> 
+            <div class="skill"><img alt="Python"  src="images/python.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Git"     src="images/git.png" width="60" height="60"></div>
+            <div class="skill"><img alt="HTML"    src="images/html.png" width="60" height="60"></div>
+            <div class="skill"><img alt="CSS"     src="images/css.png" width="60" height="60"></div>
+            <div class="skill"><img alt="JS"      src="images/js.png" width="60" height="60"></div>
+            <div class="skill"><img alt="React"   src="images/react.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Next"    src="images/next.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Node"    src="images/node.png" width="60" height="60"></div>
+            <div class="skill"><img alt="C++"     src="images/c++.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Java" src="images/java.png" width="60" height="60"></div> 
+            <div class="skill"><img alt="Python"  src="images/python.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Git"     src="images/git.png" width="60" height="60"></div>
+            <div class="skill"><img alt="HTML"    src="images/html.png" width="60" height="60"></div>
+            <div class="skill"><img alt="CSS"     src="images/css.png" width="60" height="60"></div>
+            <div class="skill"><img alt="JS"      src="images/js.png" width="60" height="60"></div>
+            <div class="skill"><img alt="React"   src="images/react.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Next"    src="images/next.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Node"    src="images/node.png" width="60" height="60"></div>
+            <div class="skill"><img alt="C++"     src="images/c++.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Java" src="images/java.png" width="60" height="60"></div> 
+            <div class="skill"><img alt="Python"  src="images/python.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Git"     src="images/git.png" width="60" height="60"></div>
+            <div class="skill"><img alt="HTML"    src="images/html.png" width="60" height="60"></div>
+            <div class="skill"><img alt="CSS"     src="images/css.png" width="60" height="60"></div>
+            <div class="skill"><img alt="JS"      src="images/js.png" width="60" height="60"></div>
+            <div class="skill"><img alt="React"   src="images/react.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Next"    src="images/next.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Node"    src="images/node.png" width="60" height="60"></div>
+            <div class="skill"><img alt="C++"     src="images/c++.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Java" src="images/java.png" width="60" height="60"></div> 
+            <div class="skill"><img alt="Python"  src="images/python.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Git"     src="images/git.png" width="60" height="60"></div>
+            <div class="skill"><img alt="HTML"    src="images/html.png" width="60" height="60"></div>
+            <div class="skill"><img alt="CSS"     src="images/css.png" width="60" height="60"></div>
+            <div class="skill"><img alt="JS"      src="images/js.png" width="60" height="60"></div>
+            <div class="skill"><img alt="React"   src="images/react.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Next"    src="images/next.png" width="60" height="60"></div>
+            <div class="skill"><img alt="Node"    src="images/node.png" width="60" height="60"></div>
+            <div class="skill"><img alt="C++"     src="images/c++.png" width="60" height="60"></div>
+
+          </div>
+
+          <div class="skills__row skills__row--clone" aria-hidden="true"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="projects" class="section">
+    <h2 class="section__title">Projects</h2>
+
+    <div class="projects__grid">
+      <a class="project" href="https://github.com/Spark-Youth-Robotics-Club-8729/2025-code" target="_blank" rel="noopener">
+        <img alt="Project 1" src="images/8729 robot.jpg">
+        <h3>8729 - 2025 Code</h3>
+        <p>Team 8729's code for the 2025 season (Reefscape)</p>
+      </a>
+
+      <a class="project" href="https://github.com/aayushg12/ISU-2" target="_blank" rel="noopener">
+        <img alt="Project 2" src="images/graph.png">
+        <h3>Grapher</h3>
+        <p>Graphing tool supporting 5+ graph types</p>
+      </a>
+
+      <a class="project" href="https://github.com/aayushg12/ISU-1" target="_blank" rel="noopener">
+        <img alt="Project 3" src="images/taurus.jpg">
+        <h3>Boundary &amp; Capacity</h3>
+        <p>Finds volume and surface area of shapes</p>
+      </a>
+
+      <a class="project" href="https://github.com/aayushg12/LazyHacks-2024" target="_blank" rel="noopener">
+        <img alt="Project 4" src="images/Puzzlance.png">
+        <h3>Puzzlance - LazyHacks 2024</h3>
+        <p>Trivia questions with fun mini-games</p>
+      </a>
+    </div>
+  </section>
+
+
+  <section id="contact" class="section contact">
+    <div class="contact__left">
+      <h2 class="section__title">Let’s Get in Touch</h2>
+      <p class="contact__tagline">
+        Have a question, new opportunity, or just want to have a quick chat? Feel free to send me a message.
+      </p>
+    </div>
+
+   
+    <form class="contact__form" action="https://formsubmit.co/aayushg0120@gmail.com" method="POST">
+      
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="table">
+      <input type="hidden" name="_subject" value="Portfolio Contact Form">
+      <!-- After success, it will show their default confirmation page.
+           To redirect to a thank-you page, add: <input type="hidden" name="_next" value="https://your-site.com/thanks.html"> -->
+
+      <label>
+        <span>Name</span>
+        <input type="text" name="name" placeholder="Your Name" required />
+      </label>
+
+      <label>
+        <span>Email</span>
+        <input type="email" name="email" placeholder="you@example.com" required />
+      </label>
+
+      <label class="full">
+        <span>Message</span>
+        <textarea name="message" rows="5" placeholder="Write your message…" required></textarea>
+      </label>
+
+      <button type="submit" class="btn btn--accent">Send</button>
+    </form>
+  </section>
+
+
+  <footer class="footer">
+    <div class="footer__top">
+      <div class="footer__left">
+        <h3>Aayush Gupta</h3>
+        <p><a href="mailto:aayushg0120@gmail.com">aayushg0120@gmail.com</a></p>
+      </div>
+      <div class="footer__right">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+      </div>
+    </div>
+
+    <hr />
+
+    <div class="footer__bottom">
+      <a href="https://github.com/aayushg12" target="_blank" rel="noopener" class="social">
+    
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-label="GitHub"><path fill="currentColor" d="M12 .5A12 12 0 0 0 0 12.7c0 5.4 3.4 10 8.2 11.6c.6.1.8-.3.8-.6v-2.2c-3.3.8-4-1.6-4-1.6c-.6-1.4-1.4-1.8-1.4-1.8c-1.1-.8.1-.8.1-.8c1.2.1 1.9 1.2 1.9 1.2c1.1 2 2.9 1.4 3.6 1.1c.1-.8.4-1.4.8-1.8c-2.7-.3-5.6-1.4-5.6-6.2c0-1.4.5-2.5 1.2-3.4c-.1-.3-.5-1.7.1-3.5c0 0 1-.3 3.5 1.3c1-.3 2-.5 3.1-.5s2.1.2 3.1.5C17 5 18 5.3 18 5.3c.6 1.8.2 3.2.1 3.5c.8.9 1.2 2 1.2 3.4c0 4.8-2.9 5.9-5.6 6.2c.5.4.9 1.2.9 2.4v3.6c0 .3.2.8.9.6c4.8-1.6 8.1-6.2 8.1-11.6A12 12 0 0 0 12 .5Z"/></svg>
+      </a>
+      <a href="https://www.instagram.com/aayush.gupta05/" target="_blank" rel="noopener" class="social">
+    
+        <svg width="24" height="24" viewBox="0 0 24 24" aria-label="Instagram"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm5 3.5A5.5 5.5 0 1 1 6.5 13A5.5 5.5 0 0 1 12 7.5m0 2A3.5 3.5 0 1 0 15.5 13A3.5 3.5 0 0 0 12 9.5M18 6.2a1.2 1.2 0 1 1-1.2 1.2A1.2 1.2 0 0 1 18 6.2"/></svg>
+      </a>
+      <p>
+    </div>
+    <div class="footer__copyright">
+      © 2025 Aayush Gupta
+    </div>
+  </footer>
+</body>
+</html>
